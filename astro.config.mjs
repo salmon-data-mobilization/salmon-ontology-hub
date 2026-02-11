@@ -1,12 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import mermaid from 'astro-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://salmon-data-mobilization.github.io',
 	base: '/salmon-ontology-hub/',
 	integrations: [
+		mermaid({
+			theme: 'neutral',
+		}),
 		starlight({
 			title: 'Salmon Ontology Hub',
 			description: 'Documentation and community hub for the Salmon Domain Ontology.',
@@ -23,22 +27,16 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Introduction',
-					items: [
-						{ label: 'Overview', slug: '' },
-						{ label: 'Getting started', slug: 'getting-started' },
-					],
+					label: 'Start here',
+					items: [{ label: 'Overview', slug: '' }],
 				},
 				{
-					label: 'Ontology',
-					items: [{ label: 'Ontology overview', slug: 'ontology' }],
+					label: 'Working Group',
+					items: [{ label: 'Working group', slug: 'working-group' }],
 				},
 				{
-					label: 'Community',
-					items: [
-						{ label: 'Contributing', slug: 'contributing' },
-						{ label: 'Governance', slug: 'governance' },
-					],
+					label: 'Resources',
+					items: [{ label: 'Resources', slug: 'resources' }],
 				},
 			],
 		}),

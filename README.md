@@ -1,6 +1,6 @@
 # Salmon Ontology Hub
 
-Documentation and community hub for the Salmon Domain Ontology.
+Documentation and community hub for the Salmon Domain Ontology and the RDA Salmon Ontology Development Working Group.
 
 ## Local development
 

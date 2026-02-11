@@ -1,17 +1,15 @@
 ---
-title: Salmon Ontology Hub
-description: A documentation and community hub for the Salmon Domain Ontology.
+title: Overview
+description: Salmon Ontology Hub overview and current status.
 template: splash
 hero:
-  tagline: Build shared language for salmon data.
-  image:
-    file: ../../assets/houston.webp
+  tagline: Shared language for salmon data integration.
   actions:
-    - text: Getting started
-      link: /getting-started/
+    - text: Working group
+      link: /working-group/
       icon: right-arrow
-    - text: Ontology overview
-      link: /ontology/
+    - text: Resources
+      link: /resources/
       icon: right-arrow
     - text: Visit on GitHub
       link: https://github.com/salmon-data-mobilization/salmon-ontology-hub
@@ -21,23 +19,56 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## What this hub is for
+## Overview
 
-The Salmon Ontology Hub is the home for documentation, collaboration, and community resources for the **Salmon Domain Ontology**. Use it to understand the ontology, coordinate contributions, and stay aligned on shared terminology across salmon data systems.
+The Salmon Ontology Hub is the documentation and coordination home for the **Salmon Domain Ontology** and its supporting working group. We’re building shared vocabulary and ontology modules so salmon datasets can be compared, integrated, and reused across organizations and regions.
 
-## Explore the site
+## Working group
+
+We are the **Salmon Ontology Development Working Group**, operating under the **Research Data Alliance (RDA) Salmon Monitoring & Research Interest Group**.
+
+## Why this matters
+
+Salmon data are fragmented across agencies, programs, and methods. Without shared terms and definitions, integration is slow, costly, and error-prone. This hub provides the community process and artifacts needed to align data for analytics, decision support, and AI-ready workflows.
+
+## Where we’re at (status)
+
+Our latest working group cycle is focused on the following actions:
+
+- **Upper ontology alignment:** confirm the alignment framework (SOSA, OBOE, I-ADOPT) and define how we represent entities, measurements, methods, and events.
+- **Module breakdown:** decompose the Hakai v. Neville schema diagram into smaller, theme-based ontology modules.
+- **Rules for automation:** draft a rule set for LLM-assisted ontology module creation (entities, measurements, methods, events).
+- **Module wiring:** identify how individual modules connect and where shared definitions live.
+
+## Quick navigation
 
 <CardGrid stagger>
-	<Card title="Read the ontology overview" icon="open-book">
-		Get familiar with the scope, structure, and key concepts.
-	</Card>
-	<Card title="Get started" icon="pencil">
-		Set up your local tooling and learn how to contribute.
-	</Card>
-	<Card title="Contribute" icon="add-document">
-		Learn how to suggest changes, raise issues, or propose new terms.
-	</Card>
-	<Card title="Governance" icon="setting">
-		Understand decision-making, review workflows, and release cadence.
-	</Card>
+  <Card title="Working group" icon="open-book">
+    Read how the WG operates and how to engage.
+  </Card>
+  <Card title="Resources" icon="link">
+    Workshop materials, references, and key links.
+  </Card>
 </CardGrid>
+
+## Milestones (Gantt)
+
+```mermaid
+gantt
+  title Salmon Ontology WG — Milestones (2026)
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b
+
+  section Planning
+  Use-case brief + requirements           :milestone, m1, 2026-02-01, 1d
+  Dataset-specific modeling draft          :m2, 2026-02-15, 30d
+
+  section Training materials
+  Case study + workshop outline            :m3, 2026-06-01, 45d
+  Alpha training materials + review        :m4, 2026-09-01, 45d
+  Final training materials + recommendation :m5, 2027-01-01, 45d
+
+  section Delivery
+  Pilot workshop delivery + revisions      :m6, 2027-04-01, 45d
+  Final recommendation published           :milestone, m7, 2027-06-30, 1d
+```
