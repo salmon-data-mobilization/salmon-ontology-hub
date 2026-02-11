@@ -31,6 +31,13 @@ export default defineConfig({
 					items: [{ label: 'Overview', slug: '' }],
 				},
 				{
+					label: 'Frameworks',
+					items: [
+						{ label: 'Alignment framework', slug: 'alignment-framework' },
+						{ label: 'Dataset modeling', slug: 'dataset-modeling' },
+					],
+				},
+				{
 					label: 'Working Group',
 					items: [{ label: 'Working group', slug: 'working-group' }],
 				},
