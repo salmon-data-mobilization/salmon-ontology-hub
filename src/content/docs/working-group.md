@@ -33,6 +33,6 @@ We are the **Salmon Ontology Development Working Group**, operating under the **
 
 We coordinate via the RDA Salmon IG and community channels, using GitHub for open issues and deliverables.
 
-- **RDA Salmon IG:** https://www.rd-alliance.org/groups/salmon-ontology-development/work-statement/
+- **RDA Salmon IG / WG page:** https://www.rd-alliance.org/groups/salmon-ontology-development/work-statement/
 - **GitHub org:** https://github.com/salmon-data-mobilization
 - **Discord:** https://discord.gg/84Qy5RZuDb

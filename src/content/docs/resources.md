@@ -8,6 +8,12 @@ description: References, training materials, and key links.
 - **Salmon Data Standards Workshop (GitHub Pages):** https://salmon-data-mobiliszation.github.io/salmon-data-standards-workshop/
 - **Repository:** https://github.com/salmon-data-mobilization/salmon-data-standards-workshop
 
+## Quick context links
+
+- **Process vision (draft):** /docs/context/DRAFT Ontology Dev Vision.md
+- **Case study description:** /docs/context/Juvenile Salmon Condition Cast-Study Description.md
+- **Meeting notes:** /docs/context/meeting notes.md
+
 ## Working group materials
 
 - **Statement of Work:** https://www.rd-alliance.org/groups/salmon-ontology-development/work-statement/
