@@ -22,14 +22,14 @@ We currently have **two datasets decomposed and mapped in one large diagram**. I
 - Sampling units (site, station, survey)
 - Physical specimens and collections
 
-**Outputs:** entity taxonomy, labels, and mappings to BFO + I‑ADOPT ObjectOfInterest.
+**Outputs:** entity taxonomy, labels, and mappings to **SOSA + I‑ADOPT ObjectOfInterest**.
 
 ### 2) Variables
 
 - Define “what is being observed” as a **composed variable**
 - Example: “juvenile sockeye fork length at ocean entry”
 
-**Outputs:** variable templates, decomposition into I‑ADOPT components, links to methods.
+**Outputs:** variable templates, decomposition into **I‑ADOPT components**, links to methods.
 
 ### 3) Properties
 
@@ -41,7 +41,7 @@ We currently have **two datasets decomposed and mapped in one large diagram**. I
 ### 4) Events & Activities
 
 - Sampling events, surveys, capture/recapture
-- Observation events in SOSA/SSN
+- Observation events in **SOSA**
 
 **Outputs:** event classes + relationships to entities and methods.
 
@@ -61,3 +61,27 @@ We currently have **two datasets decomposed and mapped in one large diagram**. I
 5. **Methods** (procedures and provenance)
 
 We’ll then **re‑compose** the modules into a single integrated model.
+
+---
+
+## Simple alignment diagram (SOSA + I‑ADOPT)
+
+```mermaid
+flowchart LR
+  OOI[I‑ADOPT Object of Interest]
+  PROP[I‑ADOPT Property]
+  VAR[I‑ADOPT Variable]
+  EVENT[SOSA: Event / Sampling]
+  OBS[SOSA: Observation]
+  MEAS[SOSA: Result / Measurement]
+  METHOD[SOSA: Procedure / Method]
+
+  VAR -->|has Object of Interest| OOI
+  VAR -->|has Property| PROP
+  OBS -->|observedProperty| VAR
+  OBS -->|hasFeatureOfInterest| OOI
+  OBS -->|hasResult| MEAS
+  OBS -->|madeBySensor / Procedure| METHOD
+  EVENT -->|hosts| OBS
+  METHOD -->|used in| OBS
+```
